@@ -83,8 +83,6 @@ const generateRandomQuestions = (data, numQuestions = 10) => {
   });
 };
 
-
-
 const Quiz = () => {
     const [questions, setQuestions] = useState([]);
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -103,10 +101,10 @@ const Quiz = () => {
           }
       };
       try {
-          await new Promise(resolve => setTimeout(resolve, 1000)); // wait for 1 second
+          await new Promise(resolve => setTimeout(resolve, 1000)); 
           const response = await fetch(url, options);
-          const data = await response.json(); // Parsing JSON data
-          setQuestions(generateRandomQuestions(data)); // Assuming generateRandomQuestions formats your questions
+          const data = await response.json(); 
+          setQuestions(generateRandomQuestions(data)); 
           setIsLoading(false);
       } catch (error) {
           console.error('Error fetching questions:', error);
