@@ -51,7 +51,7 @@ const generateRandomQuestions = (data, numQuestions = 10) => {
           questionData.answer = state.name;
           break;
         case 'statehood':
-          questionData.question = `In terms of the date of statehood, which state/territory was admitted or ratified on ${state.date}?`;
+          questionData.question = `Which state/territory was admitted to the Union on ${state.date}?`;
           questionData.options = [state.name, ...getIncorrectAnswers(state, 'name')];
           questionData.answer = state.name;
           break;
@@ -65,7 +65,7 @@ const generateRandomQuestions = (data, numQuestions = 10) => {
           }
           break;
         case 'biggestCity':
-          questionData.question = `What is the biggest city in ${state.name}?`;
+          questionData.question = `What is the populous city in ${state.name}?`;
           questionData.options = [state.cities[0].name, ...getIncorrectCityAnswers(state.cities)]
           questionData.answer = state.cities[0].name;
           break;
