@@ -65,7 +65,7 @@ const generateRandomQuestions = (data, numQuestions = 10) => {
           }
           break;
         case 'biggestCity':
-          questionData.question = `What is the populous city in ${state.name}?`;
+          questionData.question = `What is the most populous city in ${state.name}?`;
           questionData.options = [state.cities[0].name, ...getIncorrectCityAnswers(state.cities)]
           questionData.answer = state.cities[0].name;
           break;
