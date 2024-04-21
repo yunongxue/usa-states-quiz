@@ -2,7 +2,7 @@ import './App.css'
 import Quiz from './components/Quiz-local-data'
 
 
-function App() {
+const App = () => {
   return (
     <>
     <div className="app-container">

@@ -1,9 +1,9 @@
 body {
-  font-family: 'Comic Sans MS', 'Georgia';
+  font-family: 'Arial', 'Georgia';
   background-color: #f4f4f9;
   color: #333;
   margin: 0;
-  padding: 10px;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,84 +16,72 @@ body {
 }
 
 .quiz-header h1 {
-  color: slategray; 
-  margin-bottom: 70px; 
-  font-size: 2.5em; 
+  color: slategray;
+  margin-bottom: 60px; 
+  font-size: 2.5em;
+  font-family: 'Comic Sans MS', 'Arial';
 }
 
 .quiz-container {
-  font-size: 1.3em; 
-  width:800px;
-  height:300px;
+  font-size: 1.2em;
+  width: 90%;
+  max-width: 800px;
+  height: auto; 
+  margin: auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   background-color: gainsboro;
   border-radius: 8px;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-  max-width: 1000px;
-  padding: 40px;
+  padding: 20px;
 }
 
 .question-label {
   display: flex;
   flex-direction: row;
-  font-size: 1.2em;
+  font-size: 1.3em;
   font-family: 'Arial';
-  margin-bottom: 55px;
   align-items: center;
   justify-content: center;
+  margin-bottom: 20px;
 
 }
 
-.text-input {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 5px;
-  border: 1px solid #d4d4d4;
-}
-
-.submit-button {
-  padding: 10px 20px;
-  background-color: slategray;
-  color: white;
-  margin-top: 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+.option-button {
   font-family: 'Arial';
+  margin: 12px;
+  padding: 10px 20px;
+  background-color: slategrey;
+  color: white;
 }
 
 .option-button:hover {
   background-color: indianred;
 } 
 
-.options-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center; 
-  justify-content: center; 
-  width: 100%; 
-  margin-top: 20px; 
+
+.text-input {
+  display: block;
+  width: 95%;
+  padding: 2%;
+  margin-top: 5%;
+  border-radius: 5px;
+  border: 1px solid #d4d4d4;
 }
 
-.option-button {
-  margin-right: 15px; 
-  margin-left: 15px;
-  font-size: 1em;
-  font-family: 'Arial';
-  width: auto; 
-  padding: 10px 20px; 
+.submit-button {
+  padding: 10px 20px;
+  margin: 10px;
   background-color: slategray;
   color: white;
-  border-color: white;
 }
 
 .score-text {
   color: indianred;
+  font-size: 1.3em;
+  font-family: 'Comic Sans MS', 'Arial';
 }
 
 .error-message {
@@ -101,7 +89,31 @@ body {
   margin-top: 20px;
 }
 
+.final-score {
+  font-size: 1.3em;
+}
+
 .restart-quiz {
   color: white;
   background-color: indianred;
+}
+
+/* Media Queries */
+@media (min-width: 1024px) {
+  .quiz-container {
+    width: 800px;
+    height: 300px; /* Shorter fixed height for larger screens */
+  }
+}
+
+@media (max-width: 600px) {
+  .quiz-header h1 {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 375px) {
+  .quiz-header h1 {
+    font-size: 1.3em;
+  }
 }
