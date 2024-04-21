@@ -1,13 +1,26 @@
-<<<<<<< HEAD
-# React + Vite
+# U.S. States Challenge Quiz Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The U.S. States Challenge Quiz Game is an interactive web application built with React. It's designed to test your knowledge of the U.S. states and territories. Challenge yourself with questions about state nicknames, mottos, capitals, and more!
 
-Currently, two official plugins are available:
+**Live Demo:** [U.S. States Challenge Quiz Game](https://yunongxue.github.io/usa-states-quiz/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-=======
-# us-state-quiz
-An interactive quiz game testing the knowledge of U.S. states.
->>>>>>> 57b6486083e1899d290415408bf591b391fa5490
+## Core Functionality
+
+- **Interactive Questions:** Engage with 10 unique questions per session, covering various facts about U.S. states.
+- **Immediate Feedback:** Receive real-time updates on your score with each answer.
+- **Dynamic Question Pool:** Each game session randomizes questions and options to ensure a fresh experience.
+- **Scoring System:** Track your progress and final score out of 10 points.
+- **Restart Capability:** Easily start a new game session for endless replayability.
+
+## Features
+
+- **Question Presentation:** Each question is displayed one at a time, progressing automatically after each answer.
+- **Randomization:** Questions and options are shuffled randomly to provide a new challenge each time the game is played.
+- **Scoring Feedback:** See your score update in real time with each correct answer.
+- **Restart Game:** A "Try Again" button allows users to reset the game and start fresh.
+
+## Data Source
+
+This application was initially designed to fetch data from the Rapid U.S. States API but currently uses locally stored data due to API key limitations. For more details on the API, visit [Rapid U.S. States API](https://rapidapi.com/aptitudeapps/api/us-states/details).
+
+
