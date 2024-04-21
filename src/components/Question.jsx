@@ -20,7 +20,7 @@ const Question = ({ questionData, onAnswerSubmit }) => {
    * @param {string} option - The option chosen by the user.
    * @param {Event} event - The click event object.
    */
-  const handleOptionClick = (option, event) => {
+  const handleOptionClick = (option) => {
     setUserAnswer(option);  // Update the state with the chosen option.
     onAnswerSubmit(option); // Submit the chosen option.
   };
@@ -49,7 +49,7 @@ const Question = ({ questionData, onAnswerSubmit }) => {
           {questionData.options.map((option, index) => (
             <button
               key={index}
-              onClick={(e) => handleOptionClick(option, e)}
+              onClick={() => handleOptionClick(option)}
               className={userAnswer === option ? 'option-button selected' : 'option-button'}
             >
               {option}

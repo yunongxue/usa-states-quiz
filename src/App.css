@@ -57,9 +57,12 @@ body {
   color: white;
 }
 
-.option-button:hover {
-  background-color: indianred;
-} 
+ /* Hover styles only for devices that support hover  */
+@media (hover: hover) and (pointer: fine) {
+  .option-button:hover {
+    background-color: indianred;
+  }
+}
 
 
 .text-input {
@@ -101,14 +104,14 @@ body {
 /* Media Queries */
 @media (min-width: 1024px) {
   .quiz-container {
-    width: 800px;
+    width: 700px;
     height: 300px; /* Shorter fixed height for larger screens */
   }
 }
 
 @media (max-width: 600px) {
   .quiz-header h1 {
-    font-size: 1.5em;
+    font-size: 1.7em;
   }
 }
 
